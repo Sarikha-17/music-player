@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <button onclick="press(1)">1</button>
+    <button onclick="press(2)">2</button>
+    <button onclick="press(3)">3</button>
+    <button onclick="press('+')">+</button>
+    <button onclick="press('-')">-</button>
+    <button onclick="press('*')">*</button>
+    <button onclick="press('/')">/</button>
+    <button onclick="equal()">=</button>
+    <button onclick="clearCalc()">Clear</button>
+</body>
+<script>
+    let res="";
+    function press(value){
+        res += value;
+        console.log(res);
+    }
+    function equal(){
+        let a=eval(res);
+        console.log(a);
+    }
+
+    function clearCalc(){
+        res="";
+        console.log(res);
+    }
+</script>
+
+</html>
